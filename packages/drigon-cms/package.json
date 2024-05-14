@@ -1,0 +1,21 @@
+{
+  "name": "@drigontech/drigon-cms",
+  "private": false,
+  "version": "0.0.1",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "build": "tsup src/index.ts --format cjs,esm --dts",
+    "dev": "npm run build -- --watch"
+  },
+  "license": "MIT",
+  "description": "",
+  "dependencies": {
+    "tsup": "^8.0.2",
+    "typescript": "5.4.5"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
